@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_margin="20dp"
+    android:background="#2196F3"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TIP CALCULATOR"
+        android:textColor="#F44336"
+        android:textSize="34sp" />
+
+    <EditText
+        android:id="@+id/AmountID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:inputType="textPersonName"
+        android:text="Enter the bill Amount"
+        android:textColor="#F44336"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tip Percentage"
+        android:textColor="#F44336"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="91dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatSeekBar
+            android:id="@+id/seekBarID"
+            android:layout_width="250dp"
+            android:layout_height="43dp"
+            android:layout_margin="20dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Calculate"
+        android:id="@+id/TipButton"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="TipAmount"
+        android:marginLeft="20dp"
+        android:marginTop="50dp"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/TotalResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="10dp"
+        android:text="Total Result"
+        android:textSize="20sp"/>
+
+    <RadioGroup
+        android:layout_width="250dp"
+        android:layout_height="122dp"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Split"
+            android:textColor="#3F51B5"
+            android:id="@+id/radioButton"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Don't Split"
+            android:textColor="#3F51B5"
+            android:id="@+id/radioButton2"/>
+
+
+
+    <Button
+     android:id="@+id/settingsbutton"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:gravity="center"
+     android:text="Settings"/>
+
+</LinearLayout>
+
+
+
